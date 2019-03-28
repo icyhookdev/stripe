@@ -40,5 +40,3 @@ app.use(cors());
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
-
-// sk_test_yHTNEPsJXrwULmg8goBtQu6D
