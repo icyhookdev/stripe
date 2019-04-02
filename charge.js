@@ -1,5 +1,6 @@
 const express = require('express');
-const stripe = require('stripe')('sk_test_yHTNEPsJXrwULmg8goBtQu6D');
+const stripeSecretKey = require('./config/keys_prod');
+const stripe = require('stripe')(stripeSecretKey);
 
 const router = express.Router();
 
