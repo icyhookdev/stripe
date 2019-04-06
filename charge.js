@@ -21,8 +21,8 @@ router.post('/', async (req, res) => {
     res.json({ status });
     return true;
   } catch (err) {
-    // res.status(500).end();
-    res.send(err);
+    res.status(500).end();
+
     console.log(err);
   }
 });
