@@ -16,7 +16,10 @@ router.post('/', async (req, res) => {
       from: 'ficsme@wegacha.com',
       subject: 'Ficsme Order status',
       text: req.body.text,
-      html: `<strong>${req.body.text}</strong>`,
+      html: `<strong>${req.body.text}</strong>
+        <br><br>
+        <p>Ficsme Team!</p>
+      `,
     };
     sgMail.send(msg);
     console.log('email send')
