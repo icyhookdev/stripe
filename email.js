@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
   try {
     const msg = {
       to: req.body.to,
-      from: 'ficsme@wegacha.com',
+      from: 'noreply@ficsme-4c2d3.firebaseapp.com',
       subject: 'Ficsme Order status',
       text: req.body.text,
       html: `<strong>${req.body.text}</strong>
