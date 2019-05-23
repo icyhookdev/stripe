@@ -1,7 +1,10 @@
 const express = require('express');
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey("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");
+
+sgMail.setApiKey(
+  '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'
+);
 
 const router = express.Router();
 
@@ -22,7 +25,7 @@ router.post('/', async (req, res) => {
       `,
     };
     sgMail.send(msg);
-    console.log('email send')
+    console.log('email send');
     res.send('Email send');
   } catch (err) {
     res.status(500).end();
@@ -32,7 +35,3 @@ router.post('/', async (req, res) => {
 });
 
 module.exports = router;
-
-
-
-

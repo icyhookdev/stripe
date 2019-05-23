@@ -1,7 +1,7 @@
 const express = require('express');
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
-const stripe = require('stripe')('sk_test_yHTNEPsJXrwULmg8goBtQu6D');
+const stripe = require('stripe')(stripeSecretKey);
 
 const router = express.Router();
 

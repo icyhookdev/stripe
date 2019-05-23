@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const charge = require('./charge');
 const email = require('./email');
+require('dotenv').config();
 
 const app = express();
 app.use(require('body-parser').text());
